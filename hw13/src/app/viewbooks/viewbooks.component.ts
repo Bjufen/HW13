@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { BookstoreService } from '../bookstore.service';
 import { Book } from '../book';
 
-
 @Component({
   selector: 'app-viewbooks',
   templateUrl: './viewbooks.component.html',
@@ -11,7 +10,7 @@ import { Book } from '../book';
 })
 export class ViewbooksComponent implements OnInit {
   books: Array<Book> = [];
-    selectedBook: Book = new Book();
+  selectedBook: Book = new Book();
 
   constructor(private _service: BookstoreService,private _route:Router) { }
 

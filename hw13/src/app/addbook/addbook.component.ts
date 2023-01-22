@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Book } from '../book';
 import { BookstoreService } from '../bookstore.service';
+import { Router } from '@angular/router';
 
 
 
@@ -12,7 +13,7 @@ import { BookstoreService } from '../bookstore.service';
 })
 export class AddbookComponent {
 book: Book = new Book();
-constructor(private bookService: BookstoreService) { }
+constructor(private bookService: BookstoreService, private _route:Router) { }
       id = '';
       name = 'Test';
       author = '';
@@ -27,5 +28,6 @@ constructor(private bookService: BookstoreService) { }
       this.bookService.addBookToServer(this.book).subscribe(res => {
         console.log(res);
       });
+      this._route.navigate(['/viewbooks'])
     }
 }

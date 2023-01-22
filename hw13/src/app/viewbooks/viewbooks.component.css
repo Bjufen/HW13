@@ -2,20 +2,16 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-
 th, td {
   text-align: left;
   padding: 8px;
 }
-
 th {
   background-color: #f2f2f2;
 }
-
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-
 .btn-primary {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -26,7 +22,6 @@ tr:nth-child(even) {
   display: inline-block;
   font-size: 16px;
 }
-
 .btn-danger {
   background-color: #f44336; /* Red */
   border: none;
@@ -37,7 +32,6 @@ tr:nth-child(even) {
   display: inline-block;
   font-size: 16px;
 }
-
 .highlighted {
     background-color: green;
     font-weight: bold;

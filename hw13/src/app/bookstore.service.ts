@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
-//import { Book } from '../book';
 
 export interface Book {
   id: number;
@@ -34,7 +33,7 @@ export class BookstoreService {
         return this._http.get<Book>("http://localhost:8081/bookStore/oldest");
     }
 
-   getNewestBook(): Observable<Book> {
+  getNewestBook(): Observable<Book> {
         return this._http.get<Book>("http://localhost:8081/bookStore/newest");
     }
 }
